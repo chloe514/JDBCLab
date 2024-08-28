@@ -2,7 +2,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement; // Ensure this import is present
+import java.sql.Statement;
 
 public class DatabaseConnector {
 
@@ -11,7 +11,7 @@ public class DatabaseConnector {
         Connection connection = null;
         try {
             // SQLite connection string
-            String url = "jdbc:sqlite:C:/Users/chloe/Desktop/Bookstore1.db"; // Replace with the correct path to your SQLite database file
+            String url = "jdbc:sqlite:C:/Users/chloe/Desktop/Bookstore1.db";
             connection = DriverManager.getConnection(url);
             System.out.println("Successfully connected to the SQLite database!");
         } catch (SQLException e) {
